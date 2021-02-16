@@ -1,0 +1,24 @@
+Name     Lab_esd3 ;
+PartNo   00 ;
+Date     10/18/2019 ;
+Revision 01 ;
+Designer Engineer ;
+Company  cub ;
+Assembly None ;
+Location None ;
+Device   g16v8a ;
+
+/* *************** INPUT PINS *********************/
+PIN  2   =       A15                  ; /*         inputs to the spld which come fromt he microcontroller  */ 
+PIN  3   =       A14                  ; /*            these pins decide the location at which the exteranal xram varies from      */ 
+PIN  5   =       A13                  ; /*                                 */ 
+PIN  6   =       A12                  ; /*                                 */ 
+PIN  8   =       A11                  ; /*                                 */ 
+PIN  9   =       A10                  ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN  16   =     NVRAM                    ; /*                                 */ 
+
+NVRAM=A15#(!A14&!A13&!A12&!A11&!A10);        //the output logic from spld goes to ce/ of nvram which decides the location from 0x400 to 0x7fff in nvram
+
+

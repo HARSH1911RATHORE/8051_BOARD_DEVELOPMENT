@@ -1,0 +1,22 @@
+Name     HARSH_RATHORE;
+PartNo   00;
+Date     20/09/19;
+Revision 01;
+Designer Engineer;
+Company  CUB;
+Assembly None;
+Location None;
+Device   g16v8a;
+
+
+ORDER: A12, A13, A14, A15, CSPERIPH, PSEN, RD, READ; 
+
+
+VECTORS:
+0111*11*
+0111*00*
+0110*11*
+1011*11*
+0111*11*
+0111*11*
+1111*11*

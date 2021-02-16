@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1572109634 source:c:\users\harsh\desktop\cub\esd\rising_edge\main.c
+	<stdio.h>
+	<at89c51ed2.h>
+	<mcs51/8051.h>
+

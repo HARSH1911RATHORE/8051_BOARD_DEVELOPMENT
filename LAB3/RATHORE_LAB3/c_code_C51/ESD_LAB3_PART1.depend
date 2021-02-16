@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1572022461 source:c:\users\harsh\desktop\cub\esd\esd_lab3_part1\main.c
+	<stdio.h>
+	<stdlib.h>
+	<at89c51ed2.h>
+	<mcs51/8051.h>
+	<stdint.h>
+

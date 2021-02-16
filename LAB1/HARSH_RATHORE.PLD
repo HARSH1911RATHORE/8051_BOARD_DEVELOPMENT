@@ -1,0 +1,30 @@
+Name     HARSH_RATHORE ;
+PartNo   00 ;
+Date     20/09/19 ;
+Revision 01 ;
+Designer Engineer ;
+Company  CUB ;
+Assembly None ;
+Location None ;
+Device   g16v8a ;
+
+
+
+/* *************** INPUT PINS *********************/
+PIN  2  =              A15            ; /*                                 */ 
+PIN  3   =             A14            ; /*                                 */ 
+PIN  5   =             A13            ; /*                                 */ 
+PIN  6   =             A12            ; /*                                 */ 
+PIN  7   =             RD             ; /*                                 */ 
+PIN  8   =             PSEN            ; /*                                 */ 
+
+/* *************** OUTPUT PINS *********************/
+PIN  12   =       READ                  ; /*                                 */ 
+PIN  13   =       CSPERIPH                 ; /*                                 */ 
+
+
+READ = RD & PSEN;
+CSPERIPH = !(A15 & A14 & A13 & A12);
+        
+
+

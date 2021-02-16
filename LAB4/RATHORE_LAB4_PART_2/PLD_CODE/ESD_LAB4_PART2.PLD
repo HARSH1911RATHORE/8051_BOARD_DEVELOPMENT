@@ -1,0 +1,26 @@
+Name     cub ;
+PartNo   00 ;
+Date     11/20/2019 ;
+Revision 01 ;
+Designer Engineer ;
+Company  cub ;
+Assembly None ;
+Location None ;
+Device   g16v8a ;
+
+/* *************** INPUT PINS *********************/
+PIN  2   = A15                        ; /*       A15 TO A12 CONNECTED TO SPLD FOR DECIDING THE ADDRESS     */ 
+PIN  3   = A14                        ;
+PIN  5   = A13                        ; 
+PIN  6   = A12                        ; 
+PIN  17   = RD                        ; /*       READ AND WRITE PINS ARE CONNECTED TO A8 AND A9       */ 
+PIN  12   = WR                        ; /*                                 */ 
+PIN 9 = A10                          ;  /*CONNECTED TO NVRAM*/
+PIN 13 = A11                         ;
+
+/* *************** OUTPUT PINS *********************/
+PIN  14   =   ENABLE                      ; /*     OUTPUT PIN OF SPLD CONNECTED TO LCD FOR LCD TO RECEIVE COMMANDS AND PERFORM INSTRUCTIONS    */ 
+PIN 16 = NVRAM ;
+
+ENABLE=(A15&A14&A13&A12)&(RD$WR);       /*ENABLE ONLY HIGH WHEN ALL ADDRESS PINS A15 14 A13 12 ARE IEN AND EITHER REDA ,WRITE ARE ONE*/
+NVRAM=A15#(!A14&!A13&!A12&!A11&!A10); /*NVRAM LOGIC TO ENABLE REQUIRED RANGE OF ADDRESSES*/

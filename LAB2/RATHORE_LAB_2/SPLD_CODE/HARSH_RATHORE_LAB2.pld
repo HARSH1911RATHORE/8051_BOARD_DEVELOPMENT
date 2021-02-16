@@ -1,0 +1,22 @@
+Name     HARSH_RATHORE_lab2;
+PartNo   ESD2;
+Date     05/09/19 ;
+Revision 01 ;
+Designer Engineer;
+Company  University of Colorado ;
+Assembly None ;
+Location None ;
+Device   g16v8a ;
+
+/* *************** INPUT PINS *********************/
+PIN   2  =  A15                       ; /*                                 */ 
+ 
+
+/* *************** OUTPUT PINS *********************/
+
+PIN   18  =   CE              ; /*                                 */ 
+
+
+
+CE=A15;
+
